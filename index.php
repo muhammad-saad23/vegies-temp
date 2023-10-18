@@ -80,30 +80,11 @@ require('config.php');
                     
                     ?>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="admin-panel/image/".$data>
+                        <div class="categories__item set-bg" data-setbg="<?php echo 'admin-panel/images/'.$data['image']?>"
                             <h5><a href="#"><?php echo $data['title']?></a></h5>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Dried Fruit</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
-                        </div>
-                    </div>
+                    
                     <?php
                       }
                     }
